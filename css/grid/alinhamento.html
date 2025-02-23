@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alinhamento no Grid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 100px); /* 3 colunas de 100px */
+        grid-template-rows: repeat(3, 100px); /* 3 linhas de 100px */
+        gap: 10px; /* Espaçamento entre os itens */
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #ddd;
+        justify-items: center; /* Alinha itens horizontalmente */
+        align-items: center; /* Alinha itens verticalmente */
+      }
+
+      .item {
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007bff;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 8px;
+      }
+
+      /* Para alinhar individualmente um item */
+      .item.special {
+        justify-self: center; /* Alinha horizontalmente no fim */
+        align-self: start; /* Alinha verticalmente no topo */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item special">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+    </div>
+  </body>
+</html>

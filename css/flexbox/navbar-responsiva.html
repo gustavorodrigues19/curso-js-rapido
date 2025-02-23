@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .navbar {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        gap: 1rem;
+      }
+
+      @media screen and (min-width: 768px) {
+        .navbar {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div>Início</div>
+      <div>Sobre</div>
+      <div>Serviços</div>
+      <div>Contato</div>
+    </div>
+  </body>
+</html>

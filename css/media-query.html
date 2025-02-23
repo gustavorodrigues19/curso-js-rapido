@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Media Query</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          background-color: lightcoral;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 1200px) {
+        body {
+          background-color: lightgreen;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    Redimensione a janela para ver a mudança de cor!
+  </body>
+</html>
