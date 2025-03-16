@@ -20,7 +20,7 @@ Aprenda JavaScript de forma rápida e prática com um curso direto ao ponto! Est
 
 ⚙️ Atividades práticas e projetos para aplicar os conceitos.
 
-📚 Código disponível no Github.
+💻 Código disponível no Github.
 
 ## 📚 Conteúdo do curso
 
