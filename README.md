@@ -31,10 +31,31 @@ Aprenda JavaScript de forma rápida e prática com um curso direto ao ponto! Est
    - Introducao
    - Extensões
 
-2. Git&Github
+2. Git & Github
    - Introdução
    - Branching
    - Merge e rebase
    - Pull request
 
-### 01 - Fundamentos Web
+### 01 - HTML
+
+1. Estrutura
+2. Tag Semânticas
+3. Formulários
+4. Tabelas
+
+### 02 - CSS
+
+1. Seletores
+2. Flexbox
+3. Grid
+4. Animações
+5. Responsividade
+
+### 03 - JAVASCRIPT
+
+### 04 - React Js
+
+### 05 - Backend & Mongo DB
+
+### 06 - Deploy
