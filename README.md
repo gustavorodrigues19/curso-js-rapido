@@ -58,4 +58,6 @@ Aprenda JavaScript de forma rápida e prática com um curso direto ao ponto! Est
 
 ### 05 - Backend & Mongo DB
 
-### 06 - Deploy
+### 06 - Next Js
+
+### 07 - Projetos
