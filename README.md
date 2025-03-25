@@ -49,11 +49,17 @@ Aprenda JavaScript de forma rápida e prática com um curso direto ao ponto! Est
 
 ### 02 - CSS
 
-1. Seletores
-2. Flexbox
-3. Grid
-4. Animações
-5. Responsividade
+1. 3 formas de utilizar css
+2. Seletores
+3. Textos e fontes
+4. Cores e fundos
+5. Box model
+6. Layout e posicionamento
+7. Flexbox
+8. Grid
+9. Media query e responsividade
+10. Pseudo classes e elementos
+11. Portfolio
 
 ### 03 - JAVASCRIPT
 

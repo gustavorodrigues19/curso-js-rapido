@@ -1,0 +1,37 @@
+div {
+  /* Conteúdo */
+  width: 300px;
+  height: 200px;
+
+  /* Padding (interno) */
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  /* Shorthand */
+  padding: 10px 20px 10px 20px; /* topo direita baixo esquerda */
+  padding: 10px 20px; /* vertical horizontal */
+  padding: 10px; /* todos os lados */
+
+  /* Border */
+  border-width: 2px;
+  border-style: solid;
+  border-color: black;
+  /* Shorthand */
+  border: 2px solid black;
+  border-radius: 5px; /* Bordas arredondadas */
+
+  /* Margin (externo) */
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+  /* Shorthand */
+  margin: 10px 15px 10px 15px; /* topo direita baixo esquerda */
+  margin: 10px 15px; /* vertical horizontal */
+  margin: 10px; /* todos os lados */
+  margin: 0 auto; /* centraliza horizontalmente */
+
+  /* Box-sizing */
+  box-sizing: border-box; /* Inclui padding e border no tamanho */
+}

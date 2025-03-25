@@ -1,0 +1,48 @@
+/* Estilo base (aplicado a todos os tamanhos) */
+body {
+  font-size: 16px;
+}
+
+/* Dispositivos de tela pequena (celulares) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+/* Orientação do dispositivo */
+@media (orientation: landscape) {
+  .banner {
+    height: 200px;
+  }
+}
+
+/* Impressão */
+@media print {
+  .no-print {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+  }
+}

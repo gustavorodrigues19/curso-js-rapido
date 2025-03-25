@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+
+  /* Define colunas */
+  grid-template-columns: 100px 200px 100px; /* 3 colunas com tamanhos fixos */
+  grid-template-columns: 1fr 2fr 1fr; /* Frações do espaço disponível */
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+
+  /* Define linhas */
+  grid-template-rows: 50px 100px; /* 2 linhas com tamanhos fixos */
+  grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo, rodapé */
+
+  /* Espaçamento (gap) */
+  column-gap: 10px;
+  row-gap: 15px;
+  gap: 15px 10px; /* row-gap column-gap */
+  gap: 10px; /* Mesmo valor para ambos */
+
+  /* Alinhamento horizontal de itens */
+  justify-items: stretch; /* Padrão: estica os itens */
+  /* Alternativas: start, end, center */
+
+  /* Alinhamento vertical de itens */
+  align-items: stretch; /* Padrão: estica os itens */
+  /* Alternativas: start, end, center */
+
+  /* Alinhamento horizontal do grid */
+  justify-content: start; /* Padrão: alinha ao início */
+  /* Alternativas: end, center, space-between, space-around, space-evenly */
+
+  /* Alinhamento vertical do grid */
+  align-content: start; /* Padrão: alinha ao início */
+  /* Alternativas: end, center, space-between, space-around, space-evenly */
+}
+
+.item {
+  /* Posicionamento específico */
+  grid-column-start: 1;
+  grid-column-end: 3;
+  /* Shorthand */
+  grid-column: 1 / 3; /* Inicia na coluna 1 e termina na 3 */
+  grid-column: 1 / span 2; /* Inicia na coluna 1 e ocupa 2 colunas */
+
+  grid-row-start: 1;
+  grid-row-end: 3;
+  /* Shorthand */
+  grid-row: 1 / 3; /* Inicia na linha 1 e termina na 3 */
+
+  /* Shorthand para ambos */
+  grid-area: 1 / 1 / 3 / 3; /* row-start / column-start / row-end / column-end */
+
+  /* Alinhamento individual horizontal */
+  justify-self: stretch; /* Padrão: estica o item */
+  /* Alternativas: start, end, center */
+
+  /* Alinhamento individual vertical */
+  align-self: stretch; /* Padrão: estica o item */
+  /* Alternativas: start, end, center */
+}

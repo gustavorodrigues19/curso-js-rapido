@@ -1,0 +1,20 @@
+.exemplo {
+  /* Diferentes formas de definir cores */
+  color: red; /* Nome da cor */
+  color: #ff0000; /* Hexadecimal */
+  color: rgb(255, 0, 0); /* RGB */
+  color: rgba(255, 0, 0, 0.5); /* RGBA (com transparência) */
+  color: hsl(0, 100%, 50%); /* HSL */
+  color: hsla(0, 100%, 50%, 0.5); /* HSLA (com transparência) */
+}
+
+div {
+  background-color: #f0f0f0; /* Cor de fundo */
+  background-image: url("imagem.jpg"); /* Imagem de fundo */
+  background-repeat: no-repeat; /* Repetição: repeat, no-repeat, repeat-x, repeat-y */
+  background-position: center; /* Posição */
+  background-size: cover; /* Tamanho: auto, cover, contain, 50% 50% */
+
+  /* Shorthand */
+  background: #f0f0f0 url("imagem.jpg") no-repeat center/cover;
+}

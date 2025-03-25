@@ -1,0 +1,47 @@
+div {
+  display: block; /* Elemento de bloco (ocupa a largura disponível) */
+  display: inline; /* Elemento em linha (ocupa apenas o espaço necessário) */
+  display: inline-block; /* Híbrido: em linha, mas aceita width/height */
+  display: none; /* Remove o elemento do layout */
+  display: flex; /* Layout flexível */
+  display: grid; /* Layout em grade */
+}
+
+.estatico {
+  position: static; /* Padrão - segue o fluxo normal do documento */
+}
+
+.relativo {
+  position: relative; /* Posicionado em relação à sua posição normal */
+  top: 10px;
+  left: 20px;
+}
+
+.absoluto {
+  position: absolute; /* Posicionado em relação ao ancestral posicionado mais próximo */
+  top: 50px;
+  left: 50px;
+}
+
+.fixo {
+  position: fixed; /* Posicionado em relação à janela do navegador */
+  bottom: 20px;
+  right: 20px;
+}
+
+.aderente {
+  position: sticky; /* Combinação de relative e fixed */
+  top: 0;
+}
+
+.esquerda {
+  float: left; /* Flutua para a esquerda */
+}
+
+.direita {
+  float: right; /* Flutua para a direita */
+}
+
+.limpar {
+  clear: both; /* Limpa flutuações de ambos os lados */
+}

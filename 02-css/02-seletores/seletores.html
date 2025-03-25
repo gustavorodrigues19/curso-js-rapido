@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Seletores</title>
+    <style>
+      /* Seletor de elemento */
+      p {
+        color: blue;
+      }
+
+      /* Seletor de ID */
+      #cabecalho {
+        background-color: black;
+        color: white;
+      }
+
+      /* Seletor de classe */
+      .destaque {
+        font-weight: bold;
+        color: red;
+      }
+
+      /* Seletor universal */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Seletor de atributo */
+      input[type="text"] {
+        border: 1px solid gray;
+      }
+
+      /* Combinadores */
+      /* Descendente (elementos dentro de outros) */
+      article p {
+        font-style: italic;
+      }
+
+      /* Filho direto */
+      ul > li {
+        list-style-type: square;
+      }
+
+      /* Adjacente (elemento que vem imediatamente após) */
+      h2 + p {
+        font-weight: bold;
+      }
+
+      /* Irmãos (todos os elementos que seguem) */
+      h2 ~ p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores</h1>
+    <article>
+      <p>Este é um parágrafo comum.</p>
+      <p class="destaque">Este parágrafo é destacado.</p>
+      <p id="cabecalho">Este é o cabeçalho.</p>
+    </article>
+    <input type="text" placeholder="Digite seu nome" />
+    <input type="email" placeholder="Digite seu email" />
+    <input type="password" placeholder="Digite sua senha" />
+    <button>Clique aqui</button>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+    <h2>Este é o cabeçalho</h2>
+    <p>Este é um parágrafo comum.</p>
+  </body>
+</html>

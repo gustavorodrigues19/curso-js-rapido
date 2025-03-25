@@ -1,0 +1,80 @@
+/* Links */
+a:link {
+  color: blue; /* Link não visitado */
+}
+
+a:visited {
+  color: purple; /* Link visitado */
+}
+
+a:hover {
+  color: red; /* Mouse sobre o link */
+}
+
+a:active {
+  color: orange; /* Link sendo clicado */
+}
+
+/* Formulários */
+input:focus {
+  border-color: blue; /* Campo com foco */
+}
+
+input:enabled {
+  background-color: white;
+}
+
+input:disabled {
+  background-color: #eee;
+}
+
+input:checked {
+  border: 2px solid blue;
+}
+
+/* Estrutura */
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:nth-child(odd) {
+  background-color: #f9f9f9; /* Linhas ímpares */
+}
+
+li:nth-child(even) {
+  background-color: #eee; /* Linhas pares */
+}
+
+p:first-of-type {
+  font-size: 1.2em;
+}
+
+p:not(.excluido) {
+  display: block; /* Aplica a todos exceto classe .excluido */
+}
+
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+p::first-line {
+  font-style: italic;
+}
+
+p::before {
+  content: "➤ "; /* Adiciona conteúdo antes */
+}
+
+p::after {
+  content: " ✓"; /* Adiciona conteúdo depois */
+}
+
+::selection {
+  background-color: yellow;
+  color: black; /* Estilo para texto selecionado pelo usuário */
+}

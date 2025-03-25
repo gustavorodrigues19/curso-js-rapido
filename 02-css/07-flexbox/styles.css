@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+
+  /* Direção */
+  flex-direction: row; /* Padrão: esquerda para direita */
+  /* Alternativas: column, row-reverse, column-reverse */
+
+  /* Quebra de linha */
+  flex-wrap: nowrap; /* Padrão: sem quebra */
+  /* Alternativas: wrap, wrap-reverse */
+
+  /* Shorthand para direction e wrap */
+  flex-flow: row nowrap;
+
+  /* Alinhamento principal (eixo principal) */
+  justify-content: flex-start; /* Padrão: alinha ao início */
+  /* Alternativas: flex-end, center, space-between, space-around, space-evenly */
+
+  /* Alinhamento cruzado (eixo secundário) */
+  align-items: stretch; /* Padrão: estica os itens */
+  /* Alternativas: flex-start, flex-end, center, baseline */
+
+  /* Alinhamento de múltiplas linhas */
+  align-content: flex-start;
+  /* Alternativas: flex-end, center, space-between, space-around, stretch */
+}
+
+.item {
+  /* Ordem */
+  order: 0; /* Padrão: ordem de aparecimento no HTML */
+
+  /* Flexibilidade para crescer */
+  flex-grow: 0; /* Padrão: não cresce */
+
+  /* Flexibilidade para encolher */
+  flex-shrink: 1; /* Padrão: encolhe se necessário */
+
+  /* Tamanho base */
+  flex-basis: auto; /* Padrão: tamanho do conteúdo */
+
+  /* Shorthand para grow, shrink e basis */
+  flex: 0 1 auto; /* Valores padrão */
+  flex: 1; /* Equivalente a 1 1 0% - cresce e encolhe igualmente */
+
+  /* Alinhamento individual (sobrescreve align-items) */
+  align-self: auto; /* Padrão: herda do align-items */
+  /* Alternativas: flex-start, flex-end, center, baseline, stretch */
+}
