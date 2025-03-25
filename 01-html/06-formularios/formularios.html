@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <!-- Formulário com labels e inputs -->
+    <form action="/enviar" method="post">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" /><br /><br />
+
+      <label for="mensagem">Mensagem:</label><br />
+      <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea
+      ><br /><br />
+
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <!-- Tipos comuns de inputs -->
+    <form action="/enviar" method="post">
+      <!-- Texto -->
+      <input type="text" placeholder="Nome" name="nome" required />
+
+      <!-- Senha -->
+      <input type="password" placeholder="Senha" name="senha" required />
+
+      <!-- Caixa de seleção (Checkbox) -->
+      <input type="checkbox" name="concordo" id="concordo" />
+      <label for="concordo">Concordo com os termos</label>
+
+      <!-- Botões de opção (Radio) -->
+      <input type="radio" name="genero" id="masculino" value="m" />
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="feminino" value="f" />
+      <label for="feminino">Feminino</label>
+
+      <!-- Menu suspenso (Select) -->
+      <select name="pais">
+        <option value="br">Brasil</option>
+        <option value="pt">Portugal</option>
+        <option value="us">Estados Unidos</option>
+      </select>
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

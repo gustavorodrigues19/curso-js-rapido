@@ -40,9 +40,12 @@ Aprenda JavaScript de forma rápida e prática com um curso direto ao ponto! Est
 ### 01 - HTML
 
 1. Estrutura
-2. Tag Semânticas
-3. Formulários
-4. Tabelas
+2. Textos
+3. Listas
+4. Links e imagens
+5. Tabelas
+6. Formulários
+7. Tabelas
 
 ### 02 - CSS
 
