@@ -1,6 +1,9 @@
 import Input from "../components/Input";
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
+import { useAuthContext } from "../context/auth";
 
 export default function HomePage() {
   const [formData, setFormData] = useState({
@@ -8,11 +11,17 @@ export default function HomePage() {
     password: "",
   });
   const navigate = useNavigate();
+  const { handleUser } = useAuthContext();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    const response = await signInWithEmailAndPassword(
+      auth,
+      formData.email,
+      formData.password
+    );
+    handleUser(response.user);
     navigate("/chats");
-    console.log("Form submitted:", formData);
   };
 
   const handleChange = (event) => {
